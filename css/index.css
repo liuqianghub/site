@@ -1,0 +1,369 @@
+@charset "utf-8";
+body{
+    color: #fff;
+}
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(49,179,231,.8);
+    z-index: 9;
+}
+.header a{
+    background: url("../images/logo.png") no-repeat;
+    width: 53px;
+    height: 54px;
+    margin: 10px 40px;
+    text-indent: -9999px;
+    transition: 1s linear;
+
+}
+.header a:hover{
+    transform: scale(1.2);
+}
+.header span{
+    background: url("../images/resume.png") no-repeat;
+    width: 164px;
+    height: 84px;
+    background-size: 80%;
+    display: block;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+#menu{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 9;
+}
+#menu li{
+    float: left;
+    margin: 15px 10px;
+}
+#menu li a{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+#menu a:hover{
+    background-color: #333333;
+    color: white;
+    border: 1px solid transparent;
+}
+/*第一屏*/
+.wrap{
+    width:1200px;
+    margin:0 auto;
+    padding-top: 20px;
+}
+.slide {
+    height:500px;
+    position: relative;
+}
+.slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slide li img{
+    width:100%;
+}
+.arrow{
+    opacity: 0;
+}
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(../images/next.png);
+}
+
+/*第二屏*/
+.section-center{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.section-left{
+    margin-left: 100px;
+}
+.section-left img{
+    margin-top: 120px;
+    width: 80%;
+    height: 80%;
+    animation: windmill 4s linear infinite;
+    -webkit-animation: windmill 4s linear infinite;
+}
+.section-right{
+    margin-top: 200px;
+    font-size: 20px;
+    color: #333333;
+}
+.section-right p{
+    margin-bottom: 30px;
+    font-weight: 600;
+    display: none;
+
+}
+/*二屏风车动画*/
+@keyframes windmill {
+    25%{
+        transform:rotate(90deg);
+        -ms-transform:rotate(90deg); 	/* IE 9 */
+        -moz-transform:rotate(90deg); 	/* Firefox */
+        -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+        -o-transform:rotate(90deg); 	/* Opera */
+    }
+    50%{
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); 	/* IE 9 */
+        -moz-transform:rotate(180deg); 	/* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -o-transform:rotate(180deg); 	/* Opera */
+    }
+    75%{
+        transform:rotate(270deg);
+        -ms-transform:rotate(270deg); 	/* IE 9 */
+        -moz-transform:rotate(270deg); 	/* Firefox */
+        -webkit-transform:rotate(270deg); /* Safari 和 Chrome */
+        -o-transform:rotate(270deg); 	/* Opera */
+    }
+    100%{
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); 	/* IE 9 */
+        -moz-transform:rotate(360deg); 	/* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+        -o-transform:rotate(360deg); 	/* Opera */
+    }
+}
+/*第三屏*/
+.section-skill{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section-skill .section-skill-top{
+    background: url("../images/info_5.png") no-repeat;
+    width: 1077px;
+    height: 54px;
+    background-size: 56%;
+    margin-top: 15px;
+    margin-left: 266px;
+}
+.section-skill .section-skill-input{
+    background: url("../images/search.png") no-repeat;
+    width: 870px;
+    height: 77px;
+    background-size: 70%;
+    margin-left: 255px;
+    position: relative;
+}
+.section-skill .section-skill-input h3{
+    font-size: 17px;
+    color: #333333;
+    font-weight: 500;
+    position: absolute;
+    font-weight: 600;
+    left: 38px;
+    top: 31px;
+}
+.section-skill .section-skill-input h3>span{
+     display: none;
+}
+.section-skill .section-skill-info{
+    width: 840px;
+    height: 340px;
+    margin-left: 220px;
+    position: relative;
+}
+.section-skill .section-skill-info .line-top{
+    position: absolute;
+    top: -142px;
+    left: -160px;
+    width: 1100px;
+    height: 2px;
+    background-color: #C4F0D7;
+    transform: translateX(120%);
+}
+.section-skill .section-skill-info .line-left{
+    position: absolute;
+    top: -142px;
+    left: -161px;
+    height: 525px;
+    width: 2px;
+    background-color: #C4F0D7;
+    transform: translateY(-120%);
+}
+.section-skill .section-skill-info .line-bottom{
+    position: absolute;
+    left: -161px;
+    bottom: 0;
+    width: 1102px;
+    height: 2px;
+    background-color: #C4F0D7;
+    transform: translateX(-120%);
+}
+.section-skill .section-skill-info .line-right{
+    position: absolute;
+    top: -142px;
+    right: -101px;
+    height: 525px;
+    width: 2px;
+    background-color: #C4F0D7;
+    transform: translateY(120%);
+}
+.three.current .line-top {
+    transition: all 1s linear;
+    transform: translateX(0);
+}
+.three.current .line-left{
+    transition: all 1s linear;
+    transform: translateY(0);
+}
+.three.current .line-right{
+    transition: all 1s linear;
+    transform: translateY(0);
+}
+.three.current .line-bottom{
+    transition: all 1s linear;
+    transform: translateX(0);
+}
+.section-skill .section-skill-info .animated{
+    padding: 5px 0;
+    margin-left: 51px;
+    transform: translateX(120%);
+    transition: all 1s linear ;
+}
+.section-skill .section-skill-info .animated a{
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 8px 10px;
+    color: #000;
+    background-color: #6CE0D1;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.section-skill .section-skill-info .skill-click{
+    width: 64px;
+    height: 64px;
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    right: 120px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow:0 0 5px 2px #fff;
+    -moz-box-shadow:0 0 5px 2px #fff;
+    box-shadow:0 0 5px 2px #fff;
+}
+
+/*第四屏*/
+.four{
+    background: url("../images/bg4.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.four .music-box{
+    margin: 50px 0 0 150px;
+}
+.four .music-box .cube{
+    float: left;
+    margin: 15px 50px;
+    transition: .4s linear;
+}
+.four .music-box .cube img{
+    width: 250px;
+    height: 250px;
+}
+.four .music-box .cube:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 1px 1px 3px #ccc;
+}
+
+/*第五屏*/
+.fifth {
+    background: url(../images/bg5.jpg) no-repeat center center;
+    text-align: center;
+}
+.fifth .overT,.fifth .overB {
+    width: 100%;
+    height: 50%;
+    background-color: #46C8AF;
+    position: absolute;
+    left: 0;
+}
+.fifth .overT {
+    top: 0;
+}
+.fifth .overB {
+    bottom: 0;
+}
+.fifth .word{
+    font-size: 16px;
+}
+.fifth .word .contact_box {
+    text-align: left;
+    display: inline-block;
+}
+.fifth .word .contact {
+    margin: 10px 0;
+    line-height: 200%;
+}
+
+.fifth .overB>div {
+    visibility: hidden;
+}
+.callme{
+    font-size: 100px;
+    color: #46C8AF;
+    text-indent: -30px;
+    visibility: visible !important;
+}
+.callme span{
+    display: inline-block;
+    position: relative;
+    will-change: transform;
+    animation: diffuseShadow 3s infinite ease-in;
+
+}
+.callme span:nth-child(1){ animation-delay: .0s;}
+.callme span:nth-child(2){ animation-delay: .200s;}
+.callme span:nth-child(3){ animation-delay: .400s;}
+.callme span:nth-child(4){ animation-delay: .600s;}
+.callme span:nth-child(5){ animation-delay: .800s;}
+.callme span:nth-child(6){ animation-delay: 1s;}
+
+@keyframes diffuseShadow{
+    0%,10%{
+        text-shadow: 0 0 0 rgba(0,0,0,0);
+        transform: translate3d(50px,0,0);
+    }
+    50%{
+        text-shadow: 0 20px 30px rgba(0,0,0,.3);
+    }
+    70%,100%{
+        text-shadow: 0 0 0 rgba(0,0,0,.3);
+        transform: translate3d(0,0,0);
+    }
+}

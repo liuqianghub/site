@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <script type="text/javascript">
+        <!--
+        //平台、设备和操作系统
+        var system = {
+            win: false,
+            mac: false,
+            xll: false,
+            ipad:false
+        };
+        //检测平台
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+        if (system.win || system.mac || system.xll||system.ipad) {
+
+        } else {
+
+            window.location.href = "https://wugy0103.github.io/demo/mobile/";
+        }
+        -->
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="keywords" content="刘强,web前端,web前端开发,web前端工程师,web前端工程师简历,web前端开发工程师简历">
+    <meta name="description" content="刘强是一名web前端开发工程师，掌握javascript语言,html+css布局与样式，深入理解jQuery封装原理,熟悉BootStrap,Angular等前端开发框架">
+    <title>刘强的个人简历-web前端工程师</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--logo-->
+<div class="header">
+    <a href="#" class="fl">Web前端工程师刘强的个人简历</a>
+    <span></span>
+</div>
+<!--顶部菜单-->
+<ul id="menu" class="fr">
+    <li date-menuanchor='page1'><a href="#page1">首页</a></li>
+    <li date-menuanchor='page2'><a href="#page2">个人信息</a></li>
+    <li date-menuanchor='page3'><a href="#page3">专业技术</a></li>
+    <li date-menuanchor='page4'><a href="#page4">项目案例</a></li>
+    <li date-menuanchor='page5'><a href="#page5">联系我</a></li>
+    <li><a href="https://github.com/liuqianghub/site/blob/master/index.html" target="_blank">github</a></li>
+</ul>
+<!--主体-->
+<div id="fullpage">
+    <!-- 第一屏-->
+    <div class="section active">
+        <div class="wrap" id="wrap">
+            <div class="slide" id="slide">
+                <ul>
+                    <li><a href="#"><img src="images/slidepic1.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/slidepic2.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/slidepic3.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/slidepic4.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/slidepic5.jpg" alt=""/></a></li>
+                </ul>
+                <div class="arrow" id="arrow">
+                    <a href="javascript:;" class="prev"></a>
+                    <a href="javascript:;" class="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第二屏-->
+    <div class="section">
+        <div class="section-center">
+            <div class="section-left fl">
+                <img src="images/fengche.png" alt=""/>
+            </div>
+            <div class="section-right fl">
+                <p class="person-info">职位:web前端工程师</p>
+                <p class="person-info">姓名:刘强</p>
+                <p class="person-info">年龄:28</p>
+                <p class="person-info">籍贯:四川遂宁</p>
+                <p class="person-info">电话:18682553845</p>
+                <p class="person-info">邮箱:liuqiang1683@163.com</p>
+                <p class="person-info">专业:计算机应用技术</p>
+            </div>
+        </div>
+    </div>
+    <!-- 第三屏-->
+    <div class="section three">
+        <div class="section-skill">
+            <div class="section-skill-top"></div>
+            <div class="section-skill-input">
+                <h3>
+                    <span class="text-input">前</span>
+                    <span class="text-input">端</span>
+                    <span class="text-input">开</span>
+                    <span class="text-input">发</span>
+                    <span class="text-input">技</span>
+                    <span class="text-input">能</span>
+                </h3>
+            </div>
+            <div class="section-skill-info">
+                <div class="skill-click">点击</div>
+                <div class="line-top liner"></div>
+                <div class="line-left liner"></div>
+                <div class="line-bottom liner"></div>
+                <div class="line-right liner"></div>
+                <p class="animated"><a href="#">熟练手写HTML和CSS代码,能够编写语义合理、符合w3c规范的页面，能高度还原PS设计图</a></p>
+                <p class="animated"><a href="#">熟悉HTML5+CSS3,熟练运用C3动画和过渡，了解canvas</a></p>
+                <p class="animated"><a href="#">熟悉Ajax和jsonp，熟悉前后台数据交互</a></p>
+                <p class="animated"><a href="#">熟练运用JavaScript、jQuery实现页面交互，能处理复杂的页面特效</a></p>
+                <p class="animated"><a href="#">熟练掌握移动端的响应式布局及流式布局，使用bootStrap进行响应式开发,熟练使用rem布局制作移动端页面</a></p>
+                <p class="animated"><a href="#">熟悉Angular框架进行mvc开发</a></p>
+                <p class="animated"><a href="#">了解npm包管理工具，gulp前端自动化构建工具，git版本管理系统</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 第四屏-->
+    <div class="section four">
+        <div class="slide slide1">
+            <div class="music-box" id="musicBox">
+                <div class="cube cube1"><img src="date/img1.png" alt=""/></div>
+                <div class="cube cube2"><img src="date/img2.png" alt=""/></div>
+                <div class="cube cube3"><img src="date/img3.png" alt=""/></div>
+                <div class="cube cube4"><img src="date/img4.png" alt=""/></div>
+                <div class="cube cube5"><img src="date/img5.png" alt=""/></div>
+                <div class="cube cube6"><img src="date/img6.png" alt=""/></div>
+            </div>
+            <div class="item-info"></div>
+        </div>
+    </div>
+    <!-- 第五屏-->
+    <div class="section fifth" id="fifth">
+        <div class="overT"></div>
+
+        <div class="word">
+            <p>非常感谢您花时间阅读我的简历，若有意邀请面试可以通过以下方式联系本人</p>
+            <div class="contact_box">
+                <p class="contact">电话：18682553845
+                    <br/>邮箱：liuqiang1683@163.com
+                    <br/>微信：dck-1207</p>
+                <p>期待有机会和您共事!</p>
+            </div>
+        </div>
+
+        <div class="overB">
+            <div id="callme">
+                <span>c</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>m</span>
+                <span>e</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/vendors/jquery.easings.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/index.js" type="text/javascript" defer="defer"></script>
+</body>
+</html>
